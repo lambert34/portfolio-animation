@@ -57,8 +57,13 @@ html, body {
 }
 
 .slider__item {
-    width: 20vw;
-    margin-bottom: calc(var(--index) * 3);
+    width: 21vw;
+    margin-bottom: calc(var(--index) * 2.6);
+    cursor: pointer;
+}
+
+.slider__item:hover {
+    transform: scale(1.05);
 }
 
 .slider__img {
