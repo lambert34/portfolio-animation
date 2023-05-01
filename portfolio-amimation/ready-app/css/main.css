@@ -74,9 +74,7 @@ html, body {
     background-size: cover;
     border-radius: 8px;
 }
-.slider1 {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
+
+.slider:nth-child(odd) .slider__img {
+    transform: rotate(-180deg);
 }
