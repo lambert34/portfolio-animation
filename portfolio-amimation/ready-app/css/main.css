@@ -5,8 +5,13 @@
 }
 
 :root {
-
+--index: calc(1vw + 1vh);
+--transition: 1.25s ease-out; 
 }
+
+/* первая переменная задает размеры высоты относительно ширины
+вторая - это режим анимации
+ */
 
 html, body {
     height: 100%;
@@ -16,17 +21,29 @@ html, body {
 .main-wrapper {
     height: 100%;
     display: flex;
+    gap: var(--index);
+    background-image: url(/portfolio-amimation/img/bg.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .swiper {
 }
 .slider {
+    transform: rotate(12.5deg);
 }
+
+.slider:nth-child(odd) {
+    transform: rotate(192.5deg);
+}
+
+/* где odd значит - через один слайд */
 
 .slider__wrapper {
 }
 
 .slider__item {
     width: 20vw;
+    margin-bottom: calc(var(--index) * 3);
 }
 
 .slider__img {
