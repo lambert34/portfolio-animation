@@ -6,7 +6,7 @@
 
 :root {
 --index: calc(1vw + 1vh);
---transition: 0.05s cubic-bezier(.4, .8, 0, 1); 
+--transition: 0.8s cubic-bezier(.2, .9, 1, 1); 
 }
 
 /* первая переменная задает размеры высоты относительно ширины
